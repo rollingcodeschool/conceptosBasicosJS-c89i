@@ -15,3 +15,22 @@ document.write('<p class="text-center text-primary">Primer mensaje en el documen
 
 //ventanas emergentes
 // alert('Ejemplo de un alerta');
+
+//Declarar e inicializar una variable
+// declarar o crear una variable (var - let -const)
+
+let regaloNavidad = 'Iphone 15 Pro max';
+
+document.write('Regalo de navidad 2023: '+ regaloNavidad + '<br>' );
+
+//modificar el contenido de una variable creada con la palabra let
+regaloNavidad = 'Rtx 4090 Rog Strix';
+
+document.write('Regalo de navidad 2023: '+ regaloNavidad);
+
+const urlUniverse = 'https://universe.rollingcodeschool.com/';
+
+document.write('<br>Página de Universe: '+ urlUniverse);
+
+// urlUniverse = 123;
+// document.write('<br>Página de Universe: '+ urlUniverse);
