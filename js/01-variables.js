@@ -34,3 +34,11 @@ document.write('<br>Página de Universe: '+ urlUniverse);
 
 // urlUniverse = 123;
 // document.write('<br>Página de Universe: '+ urlUniverse);
+
+let precioSinImpuestos = 1100;
+let impuestos = 600;
+
+// document.write('<br>El precio del Iphone 15 es: $'+ (precioSinImpuestos + impuestos) + ' USD');
+let resultado = precioSinImpuestos + impuestos;
+
+document.write('<br>El precio del Iphone 15 es: $'+ (resultado) + ' USD');
