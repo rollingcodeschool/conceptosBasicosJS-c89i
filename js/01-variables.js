@@ -42,3 +42,21 @@ let impuestos = 600;
 let resultado = precioSinImpuestos + impuestos;
 
 document.write('<br>El precio del Iphone 15 es: $'+ (resultado) + ' USD');
+
+// agregamos el ejercicio de elias
+
+//parseInt('50')
+//parseFloat('50.3')
+let gradosCelsius = parseInt(prompt('Ingrese un valor en grados centigrados'))
+console.log(gradosCelsius)
+
+let gradosFahrenheit = (gradosCelsius * 9) / 5 + 32;
+
+document.write(
+  "<br>" +
+    gradosCelsius +
+    "°C grados celsius son equivalentes a " +
+    gradosFahrenheit +
+    "°F grados farenheit"
+);
+document.write("<br>Otro ejemplo :" + (gradosCelsius + 50));
