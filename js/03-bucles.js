@@ -5,7 +5,6 @@
 }
 */
 // let renglon = 1000;
-
 // while(renglon <= 100){
 //     //  document.write('<p>Renglon numero '+ renglon+'</p>');
 //      document.write(`<p>Renglón número ${renglon}</p>`);
@@ -19,10 +18,20 @@ do{
   agregar un codigo para que la condicion se deje de cumplir
 }while(condicion logica)
 */
-let renglon = 1000;
-do{
-    document.write(`<p>Renglón número ${renglon}</p>`);
-    renglon++; 
-}while(renglon <=50)
+// let renglon = 1000;
+// do{
+//     document.write(`<p>Renglón número ${renglon}</p>`);
+//     renglon++; 
+// }while(renglon <=50)
 
 //for
+
+/*
+for(inicializamos una variable; condicion logica; incrementar o decrementar una variable){
+     todas las lineas de codigo que quiero repetir varias veces
+}
+*/
+
+for(let renglon =1000; renglon <=50; renglon++){
+    document.write(`<p>Renglón número ${renglon}</p>`);
+}
