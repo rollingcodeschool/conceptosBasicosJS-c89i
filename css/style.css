@@ -6,3 +6,11 @@
 body{
     margin: 10px 20px;
 }
+
+table, td{
+    border: 1px solid rgb(11, 70, 207);
+}
+
+td{
+    padding: 10px;
+}
