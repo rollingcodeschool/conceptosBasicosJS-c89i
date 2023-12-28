@@ -7,9 +7,14 @@ do {
     "Seleccione una opción: 1- Consultar el saldo, 2- Depositar dinero, 3- Extraer dinero"
   );
 
+  //   console.log(operacion.toLowerCase()); //transformar un string a minusculas
+  //   console.log(operacion.toUpperCase());//transformar un string a mayusculas
+  // String.trim() quita espacios vacios delante y al fin del string, no los espacios del medio
+
   switch (operacion) {
+    case "saldo":
     case "1":
-      document.write(`<p>Saldo disponible: $${saldo}</p>`);
+      document.write(`<p>Saldo disponible: $${saldo} </p>`);
       console.log(saldo);
       break;
     case "2":
@@ -49,6 +54,8 @@ do {
       alert("Seleccionó una opción invalida");
   }
 } while (confirm("¿Desea realizar otra operación?"));
+
+
 
 /*
 if (operacion === "1") {
