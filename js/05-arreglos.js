@@ -48,4 +48,40 @@ for(let posicion=0; posicion < juegos.length; posicion++){
 }
 document.write(`</ul>`)
 
+//modificar elementos del array
+juegos[3] = 'Dont starve';
+// juegos = 'Dont starve'; este codigo es incorrecto, no puedo cambiar el contenido total del array por otro valor
 
+document.write(`<h2>Modificamos el juego de la posicion 6 del array 🎮 (${juegos.length})</h2>`)
+document.write(`<ul>`)
+for(let posicion=0; posicion < juegos.length; posicion++){
+    document.write(`<li>${juegos[posicion]}</li>`)
+}
+document.write(`</ul>`)
+
+//Eliminar elementos del array
+juegos.shift();
+document.write(`<h2>Borramos el primer elemento del array 🎮 (${juegos.length})</h2>`)
+document.write(`<ul>`)
+for(let posicion=0; posicion < juegos.length; posicion++){
+    document.write(`<li>${juegos[posicion]}</li>`)
+}
+document.write(`</ul>`)
+
+juegos.splice(3,1);
+// juegos.splice(3,2); //borramos desde la posicion 3, la cantidad de 2 elementos
+// juegos.splice(3); // borramos desde la posicion 3 el resto de los elemenos del array
+document.write(`<h2>Borramos el elemento de la posicion 3 del array 🎮 (${juegos.length})</h2>`)
+document.write(`<ul>`)
+for(let posicion=0; posicion < juegos.length; posicion++){
+    document.write(`<li>${juegos[posicion]}</li>`)
+}
+document.write(`</ul>`)
+
+juegos.pop();
+document.write(`<h2>Borramos el ultimo elemento del array 🎮 (${juegos.length})</h2>`)
+document.write(`<ul>`)
+for(let posicion=0; posicion < juegos.length; posicion++){
+    document.write(`<li>${juegos[posicion]}</li>`)
+}
+document.write(`</ul>`)
