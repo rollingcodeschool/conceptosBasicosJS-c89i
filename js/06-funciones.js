@@ -10,24 +10,38 @@ function top3Juegos() {
 }
 
 //funciones con parametros
-function saludarJugador(nombre, juego) {
-  document.write(
-    `<p>Hola ${nombre}, bienvenido a "${juego}". Que tengas una excelente jornada de juegos.</p>`
-  );
-}
+// function saludarJugador(nombre, juego) {
+//   document.write(
+//     `<p>Hola ${nombre}, bienvenido a "${juego}". Que tengas una excelente jornada de juegos.</p>`
+//   );
+// }
+
+const saludarJugador = (nombre, juego) => document.write(`<p>Hola ${nombre}, bienvenido a "${juego}". Que tengas una excelente jornada de juegos.</p>`
+      );
+
 
 //funciones que retornan un valor
-function juegoClasico(nombreJuego, anioLanzamiento) {
-  const anioActual = new Date().getFullYear();
-  const antiguedad = anioActual - anioLanzamiento;
-  let respuesta = "";
-  if (antiguedad >= 10) {
-    respuesta = `El juego ${nombreJuego} es considerado un clasico, tiene una antiguedad de ${antiguedad} años`;
-  }else{
-    respuesta =  `El juego ${nombreJuego} no es un clasico, tiene una antiguedad de ${antiguedad} años`;
+// function juegoClasico(nombreJuego, anioLanzamiento) {
+//   const anioActual = new Date().getFullYear();
+//   const antiguedad = anioActual - anioLanzamiento;
+//   if (antiguedad >= 10) {
+//     return `El juego ${nombreJuego} es considerado un clasico, tiene una antiguedad de ${antiguedad} años`;
+//   }else{
+//     return `El juego ${nombreJuego} no es un clasico, tiene una antiguedad de ${antiguedad} años`;
+//   }
+// }
+
+//arrow functions
+const juegoClasico = (nombreJuego, anioLanzamiento) =>{
+    const anioActual = new Date().getFullYear();
+    const antiguedad = anioActual - anioLanzamiento;
+    if (antiguedad >= 10) {
+      return `El juego ${nombreJuego} es considerado un clasico, tiene una antiguedad de ${antiguedad} años`;
+    }else{
+      return `El juego ${nombreJuego} no es un clasico, tiene una antiguedad de ${antiguedad} años`;
+    }
   }
-  return respuesta;
-}
+
 
 //llamar o invocar
 top3Juegos();
