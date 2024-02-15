@@ -24,7 +24,7 @@ const perifericos = [
 const mostrarArray = (titulo, arrayNuevo) => {
   document.write(`<h2>${titulo}</h2>`);
   document.write(`<ul>`);
-   //metodo inmutable map
+  //metodo inmutable map
   arrayNuevo.map((producto) => document.write(`<li>${producto}</li>`));
   document.write(`</ul>`);
 };
@@ -34,11 +34,25 @@ mostrarArray("Lista de productos", perifericos);
 
 //verificar si el periferico: Auriculares gaming Razer BlackShark V2 existe en el array
 //Ejemplo con includes
-const productoParaBuscar = "Auriculares gaming Razer BlackShark V2";
+const productoParaBuscar = "Auriculares gaming Razer BlackShark";
 document.write(`<p>Existe el producto: ${productoParaBuscar}</p>`)
+  // if(perifericos.includes(productoParaBuscar)){
+  //     document.write(`<p>El producto: ${productoParaBuscar}, si existe</p>`)
+  // }else{
+  //     document.write(`<p>El producto: ${productoParaBuscar}, No existe</p>`)
+  // }
 
-if(perifericos.includes(productoParaBuscar)){
-    document.write(`<p>El producto: ${productoParaBuscar}, si existe</p>`)
-}else{
-    document.write(`<p>El producto: ${productoParaBuscar}, No existe</p>`)
-}
+  // Operador ternario => (condicion logica)? agrego lo que quiero si se cumple la condicion : agrego lo que quiero si no cumple la condicion;
+
+  perifericos.includes(productoParaBuscar)? document.write(`<p>El producto: ${productoParaBuscar}, si existe</p>`)
+  : document.write(`<p>El producto: ${productoParaBuscar}, No existe</p>`)
+
+  //crear un filtro de elementos
+  const productosFiltrados = perifericos.filter((producto)=> producto.includes("Auriculares"))
+  mostrarArray('Auriculares disponibles:', productosFiltrados);
+
+  //buscar un elemento, Webcam 4K Logitech Brio
+
+//   const productoBuscado = perifericos.find((producto)=>  producto === "Webcam 4K Logitech Brio");
+  const productoBuscado = perifericos.find((producto)=> producto.includes("Webcam 4K"));
+  document.write(`<p>Producto buscado: ${productoBuscado}</p>`)
